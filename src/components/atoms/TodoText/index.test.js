@@ -9,4 +9,9 @@ describe('TodoText', () => {
     const wrapper = wrap();
     expect(wrapper.exists()).toBe(true);
   });
+
+  it('InputText コンポーネントがレンダリングされていること', () => {
+    const wrapper = wrap();
+    expect(wrapper.find('InputText').exists()).toBe(true);
+  });
 });
