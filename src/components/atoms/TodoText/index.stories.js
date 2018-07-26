@@ -16,4 +16,5 @@ storiesOf('Atom|TodoText', module)
   )
   .addDecorator(withSmartKnobs)
   .addDecorator(withKnobs)
-  .addWithJSX('default', withNotes(``)(() => <TodoText />));
+  .addWithJSX('default', withNotes(``)(() => <TodoText />))
+  .addWithJSX('props text', withNotes(``)(() => <TodoText text="hoge" />));

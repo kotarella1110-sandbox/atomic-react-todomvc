@@ -1,5 +1,7 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const InputText = styled.input.attrs({
   type: 'text',
@@ -10,6 +12,22 @@ const InputText = styled.input.attrs({
   box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
 `;
 
-const TodoText = () => <InputText />;
+class TodoText extends React.Component {
+  static propTypes = {
+    text: PropTypes.string,
+  };
+
+  state = {
+    text: this.props.text,
+  };
+
+  render() {
+    return <InputText value={this.state.text} {...this.props} />;
+  }
+}
+
+TodoText.defaultProps = {
+  text: '',
+};
 
 export default TodoText;

@@ -14,4 +14,9 @@ describe('TodoText', () => {
     const wrapper = wrap();
     expect(wrapper.find('InputText').exists()).toBe(true);
   });
+
+  it('Props で渡したテキストが State に保持されていること', () => {
+    const wrapper = wrap({ text: 'Test!' });
+    expect(wrapper.state('text')).toBe('Test!');
+  });
 });

@@ -11,5 +11,21 @@ exports[`FileProperties Atom|TodoText default 1`] = `
 <input
   className="c0"
   type="text"
+  value=""
+/>
+`;
+
+exports[`FileProperties Atom|TodoText props text 1`] = `
+.c0 {
+  padding: 16px 16px 16px 60px;
+  border: 0;
+  background: rgba(0,0,0,0.003);
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+<input
+  className="c0"
+  type="text"
+  value="hoge"
 />
 `;
