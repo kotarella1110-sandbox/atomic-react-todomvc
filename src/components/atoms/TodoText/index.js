@@ -15,6 +15,7 @@ const InputText = styled.input.attrs({
 class TodoText extends React.Component {
   static propTypes = {
     text: PropTypes.string,
+    handleEnter: PropTypes.func,
   };
 
   state = {
@@ -26,11 +27,18 @@ class TodoText extends React.Component {
     this.setState({ text });
   };
 
+  handleKeyDown = e => {
+    if (e.keyCode === 13) {
+      this.props.handleEnter(this.state.text);
+    }
+  };
+
   render() {
     return (
       <InputText
         value={this.state.text}
         onChange={this.handleChange}
+        onKeyDown={this.handleKeyDown}
         {...this.props}
       />
     );
@@ -39,6 +47,7 @@ class TodoText extends React.Component {
 
 TodoText.defaultProps = {
   text: '',
+  handleEnter: text => text,
 };
 
 export default TodoText;

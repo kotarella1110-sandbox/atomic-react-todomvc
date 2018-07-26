@@ -25,4 +25,12 @@ describe('TodoText', () => {
     wrapper.simulate('change', { target: { value: 'Test! Input!' } });
     expect(wrapper.state('text')).toBe('Test! Input!');
   });
+
+  it('Enter を押すと入力されたテキストを引数として Props で渡されたコールバックを実行すること', () => {
+    const handleEnter = jest.fn();
+    const wrapper = wrap({ text: 'Test!', handleEnter });
+    wrapper.find('InputText').simulate('keyDown', { keyCode: 13 });
+    expect(handleEnter).toHaveBeenCalledTimes(1);
+    expect(handleEnter).toHaveBeenCalledWith('Test!');
+  });
 });
