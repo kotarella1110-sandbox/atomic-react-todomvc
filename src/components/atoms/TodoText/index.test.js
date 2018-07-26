@@ -19,4 +19,10 @@ describe('TodoText', () => {
     const wrapper = wrap({ text: 'Test!' });
     expect(wrapper.state('text')).toBe('Test!');
   });
+
+  it('入力したテキストが State に保持されていること', () => {
+    const wrapper = wrap({ text: 'Test!' });
+    wrapper.simulate('change', { target: { value: 'Test! Input!' } });
+    expect(wrapper.state('text')).toBe('Test! Input!');
+  });
 });

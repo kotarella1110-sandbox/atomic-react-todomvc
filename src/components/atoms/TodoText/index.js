@@ -21,8 +21,19 @@ class TodoText extends React.Component {
     text: this.props.text,
   };
 
+  handleChange = e => {
+    const text = e.target.value;
+    this.setState({ text });
+  };
+
   render() {
-    return <InputText value={this.state.text} {...this.props} />;
+    return (
+      <InputText
+        value={this.state.text}
+        onChange={this.handleChange}
+        {...this.props}
+      />
+    );
   }
 }
 

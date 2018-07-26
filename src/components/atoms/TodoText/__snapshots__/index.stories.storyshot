@@ -10,6 +10,7 @@ exports[`FileProperties Atom|TodoText default 1`] = `
 
 <input
   className="c0"
+  onChange={[Function]}
   type="text"
   value=""
 />
@@ -25,6 +26,7 @@ exports[`FileProperties Atom|TodoText props text 1`] = `
 
 <input
   className="c0"
+  onChange={[Function]}
   type="text"
   value="hoge"
 />
