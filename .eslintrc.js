@@ -9,6 +9,12 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': 0,
+    'import/no-unresolved': [
+      2,
+      {
+        ignore: ['components', 'containers'],
+      },
+    ],
     'import/no-extraneous-dependencies': [
       0,
       {

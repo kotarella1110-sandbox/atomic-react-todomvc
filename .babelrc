@@ -11,7 +11,8 @@
             "displayName": true,
             "fileName": false
           }
-        ]
+        ],
+        "require-context-hook"
       ]
     }
   }
