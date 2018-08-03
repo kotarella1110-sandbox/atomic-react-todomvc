@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { TodoItem, Button } from 'components';
+import { TodoItem, Button, TodoText } from 'components';
 
 const setup = editing => {
   const props = {
@@ -68,5 +68,13 @@ describe('TodoItem', () => {
     const Label = wrapper.dive().find('Label');
     Label.simulate('doubleClick');
     expect(wrapper.state('editing')).toBe(true);
+  });
+
+  it('state.editing=true の時 StyledTodoText がレンダリングされていること', () => {
+    const { wrapper } = setup(true);
+    const StyledTodoText = wrapper.dive().find('StyledTodoText');
+    expect(wrapper.prop('editing')).toBe(true);
+    expect(StyledTodoText.dive().type()).toBe(TodoText);
+    expect(StyledTodoText.dive().prop('text')).toBe('foo');
   });
 });

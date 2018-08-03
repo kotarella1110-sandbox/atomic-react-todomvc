@@ -148,14 +148,18 @@ class TodoItem extends React.Component {
 
     return (
       <Wrapper editing={editing} completed={todo.completed}>
-        <View>
-          <Toggle
-            checked={todo.completed}
-            onChange={() => completeTodo(todo.id)}
-          />
-          <Label onDoubleClick={this.handleDoubleClick}>{todo.text}</Label>
-          <DestroyButton onClick={() => deleteTodo(todo.id)} />
-        </View>
+        {editing ? (
+          <StyledTodoText text={todo.text} editing={editing} />
+        ) : (
+          <View>
+            <Toggle
+              checked={todo.completed}
+              onChange={() => completeTodo(todo.id)}
+            />
+            <Label onDoubleClick={this.handleDoubleClick}>{todo.text}</Label>
+            <DestroyButton onClick={() => deleteTodo(todo.id)} />
+          </View>
+        )}
       </Wrapper>
     );
   }
