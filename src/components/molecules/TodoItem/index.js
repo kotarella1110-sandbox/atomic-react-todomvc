@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 import { Button, TodoText } from 'components';
 
 const StyledTodoText = styled(TodoText)``;
@@ -122,14 +123,22 @@ const DestroyButton = styled(Button)`
   }
 `;
 
-const TodoItem = () => (
+const TodoItem = ({ todo }) => (
   <Wrapper>
     <View>
-      <Toggle />
-      <Label />
+      <Toggle checked={todo.completed} />
+      <Label>{todo.text}</Label>
       <DestroyButton />
     </View>
   </Wrapper>
 );
+
+TodoItem.propTypes = {
+  todo: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    text: PropTypes.string.isRequired,
+    completed: PropTypes.bool.isRequired,
+  }).isRequired,
+};
 
 export default TodoItem;

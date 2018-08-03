@@ -109,12 +109,15 @@ exports[`FileProperties Molecule|TodoItem default 1`] = `
     className=""
   >
     <input
+      checked={false}
       className="c2"
       type="checkbox"
     />
     <label
       className="c3 c4"
-    />
+    >
+      foo
+    </label>
     <button
       className="c5 c6"
     />

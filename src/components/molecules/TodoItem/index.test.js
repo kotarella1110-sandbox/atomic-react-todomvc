@@ -3,7 +3,16 @@ import { shallow } from 'enzyme';
 import { TodoItem, Button } from 'components';
 
 const setup = () => {
-  const props = {};
+  const props = {
+    todo: {
+      id: 0,
+      text: 'foo',
+      completed: false,
+    },
+    editTodo: jest.fn(),
+    deleteTodo: jest.fn(),
+    completeTodo: jest.fn(),
+  };
 
   const wrapper = shallow(<TodoItem {...props} />);
 
@@ -23,7 +32,9 @@ describe('TodoItem', () => {
     expect(wrapper.dive().type()).toBe('li');
     expect(View.dive().type()).toBe('div');
     expect(Toggle.dive().prop('type')).toBe('checkbox');
+    expect(Toggle.dive().prop('checked')).toBe(false);
     expect(Label.dive().type()).toBe('label');
+    expect(Label.dive().text()).toBe('foo');
     expect(DestroyButton.dive().type()).toBe(Button);
   });
 });
