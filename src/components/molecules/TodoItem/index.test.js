@@ -88,4 +88,15 @@ describe('TodoItem', () => {
     expect(editTodo).toHaveBeenCalledTimes(1);
     expect(editTodo).toHaveBeenCalledWith(0, 'bar');
   });
+
+  it('state.editing=true 且つ StyledTodoText のテキストが空の時 onSave で deleteTodo が呼ばれるここと', () => {
+    const {
+      props: { deleteTodo },
+      wrapper,
+    } = setup(true);
+    const StyledTodoText = wrapper.dive().find('StyledTodoText');
+    StyledTodoText.props().onSave('');
+    expect(deleteTodo).toHaveBeenCalledTimes(1);
+    expect(deleteTodo).toHaveBeenCalledWith(0);
+  });
 });
