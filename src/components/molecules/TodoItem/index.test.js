@@ -58,4 +58,11 @@ describe('TodoItem', () => {
     expect(deleteTodo).toHaveBeenCalledTimes(1);
     expect(deleteTodo).toHaveBeenCalledWith(0);
   });
+
+  it('Label の onDoubleClick で state.editing が true になること', () => {
+    const { wrapper } = setup();
+    const Label = wrapper.dive().find('Label');
+    Label.simulate('doubleClick');
+    expect(wrapper.state('editing')).toBe(true);
+  });
 });
