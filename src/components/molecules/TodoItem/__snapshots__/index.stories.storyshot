@@ -111,6 +111,7 @@ exports[`FileProperties Molecule|TodoItem default 1`] = `
     <input
       checked={false}
       className="c2"
+      onChange={[Function]}
       type="checkbox"
     />
     <label

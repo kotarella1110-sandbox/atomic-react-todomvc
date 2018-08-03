@@ -37,4 +37,14 @@ describe('TodoItem', () => {
     expect(Label.dive().text()).toBe('foo');
     expect(DestroyButton.dive().type()).toBe(Button);
   });
+
+  it('Toggle の onChange で completeTodo が呼ばれること', () => {
+    const {
+      props: { completeTodo },
+      wrapper,
+    } = setup();
+    wrapper.find('Toggle').simulate('change');
+    expect(completeTodo).toHaveBeenCalledTimes(1);
+    expect(completeTodo).toHaveBeenCalledWith(0);
+  });
 });
