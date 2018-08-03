@@ -25,7 +25,7 @@ export default Button;
 
 ### Button コンポーネントのストーリー
 
-保存するとスナップショットテストが実行され、 _src/components/atoms/TodoText/__snapshots__/index.stories.storyshot_ が作成されます。
+保存するとスナップショットテストが実行され、 _src/components/atoms/Button/__snapshots__/index.stories.storyshot_ が作成されます。
 
 _src/components/atoms/Button/index.stories.js_
 
@@ -74,6 +74,7 @@ describe('Button', () => {
 
 * [`shallow([options])`](http://airbnb.io/enzyme/docs/api/ShallowWrapper/shallow.html): コンポーネントを浅くレンダリング
 * [`type()`](https://airbnb.io/enzyme/docs/api/ShallowWrapper/type.html): node の type を返す
+* [`toBe(value)`](https://jestjs.io/docs/ja/expect#tobevalue): 等価性を比較するマッチャー
 
 > **PASS**  src/components/atoms/Button/index.test.js
 
