@@ -1,5 +1,5 @@
 import React from 'react';
 
-const TodoItem = () => <div />;
+const TodoItem = () => <li />;
 
 export default TodoItem;

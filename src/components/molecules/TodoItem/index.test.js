@@ -1,12 +1,21 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import TodoItem from '.';
+import { TodoItem } from 'components';
+
+const setup = () => {
+  const props = {};
+
+  const wrapper = shallow(<TodoItem {...props} />);
+
+  return {
+    props,
+    wrapper,
+  };
+};
 
 describe('TodoItem', () => {
-  const wrap = (props = {}) => shallow(<TodoItem {...props} />);
-
   it('コンポーネントがレンダリングされていること', () => {
-    const wrapper = wrap();
-    expect(wrapper.exists()).toBe(true);
+    const { wrapper } = setup();
+    expect(wrapper.type()).toBe('li');
   });
 });
