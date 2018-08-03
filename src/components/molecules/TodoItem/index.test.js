@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { TodoItem, Button } from 'components';
 
-const setup = () => {
+const setup = editing => {
   const props = {
     todo: {
       id: 0,
@@ -15,6 +15,10 @@ const setup = () => {
   };
 
   const wrapper = shallow(<TodoItem {...props} />);
+
+  if (editing) {
+    wrapper.setState({ editing });
+  }
 
   return {
     props,
