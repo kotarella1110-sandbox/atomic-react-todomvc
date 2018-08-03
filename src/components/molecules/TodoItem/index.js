@@ -150,6 +150,7 @@ class TodoItem extends React.Component {
     } else {
       editTodo(id, text);
     }
+    this.setState({ editing: false });
   };
 
   render() {

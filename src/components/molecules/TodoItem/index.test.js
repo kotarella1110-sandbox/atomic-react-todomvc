@@ -99,4 +99,14 @@ describe('TodoItem', () => {
     expect(deleteTodo).toHaveBeenCalledTimes(1);
     expect(deleteTodo).toHaveBeenCalledWith(0);
   });
+
+  it('state.editing=true の時 StyledTodoText の onSave で state.editing が false になること', () => {
+    const { wrapper } = setup(true);
+    const StyledTodoText = wrapper.dive().find('StyledTodoText');
+    StyledTodoText.props().onSave('bar');
+    wrapper.update();
+    expect(wrapper.state('editing')).toBe(false);
+    expect(wrapper.dive().type()).toBe('li');
+    expect(wrapper.prop('editing')).toBe(false);
+  });
 });
