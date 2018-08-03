@@ -130,6 +130,7 @@ class TodoItem extends React.Component {
       text: PropTypes.string.isRequired,
       completed: PropTypes.bool.isRequired,
     }).isRequired,
+    editTodo: PropTypes.func.isRequired,
     deleteTodo: PropTypes.func.isRequired,
     completeTodo: PropTypes.func.isRequired,
   };
@@ -142,6 +143,11 @@ class TodoItem extends React.Component {
     this.setState({ editing: true });
   };
 
+  handleSave = (id, text) => {
+    const { editTodo } = this.props;
+    editTodo(id, text);
+  };
+
   render() {
     const { todo, completeTodo, deleteTodo } = this.props;
     const { editing } = this.state;
@@ -149,7 +155,11 @@ class TodoItem extends React.Component {
     return (
       <Wrapper editing={editing} completed={todo.completed}>
         {editing ? (
-          <StyledTodoText text={todo.text} editing={editing} />
+          <StyledTodoText
+            text={todo.text}
+            editing={editing}
+            onSave={text => this.handleSave(todo.id, text)}
+          />
         ) : (
           <View>
             <Toggle

@@ -77,4 +77,15 @@ describe('TodoItem', () => {
     expect(StyledTodoText.dive().type()).toBe(TodoText);
     expect(StyledTodoText.dive().prop('text')).toBe('foo');
   });
+
+  it('state.editing=true の時 StyledTodoText の onSave で editTodo が呼ばれること', () => {
+    const {
+      props: { editTodo },
+      wrapper,
+    } = setup(true);
+    const StyledTodoText = wrapper.dive().find('StyledTodoText');
+    StyledTodoText.props().onSave('bar');
+    expect(editTodo).toHaveBeenCalledTimes(1);
+    expect(editTodo).toHaveBeenCalledWith(0, 'bar');
+  });
 });
