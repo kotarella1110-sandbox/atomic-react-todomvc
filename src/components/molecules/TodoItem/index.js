@@ -123,12 +123,12 @@ const DestroyButton = styled(Button)`
   }
 `;
 
-const TodoItem = ({ todo, completeTodo }) => (
+const TodoItem = ({ todo, completeTodo, deleteTodo }) => (
   <Wrapper completed={todo.completed}>
     <View>
       <Toggle checked={todo.completed} onChange={() => completeTodo(todo.id)} />
       <Label>{todo.text}</Label>
-      <DestroyButton />
+      <DestroyButton onClick={() => deleteTodo(todo.id)} />
     </View>
   </Wrapper>
 );
@@ -139,6 +139,7 @@ TodoItem.propTypes = {
     text: PropTypes.string.isRequired,
     completed: PropTypes.bool.isRequired,
   }).isRequired,
+  deleteTodo: PropTypes.func.isRequired,
   completeTodo: PropTypes.func.isRequired,
 };
 

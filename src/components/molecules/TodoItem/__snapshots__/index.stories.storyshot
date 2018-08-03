@@ -121,6 +121,7 @@ exports[`FileProperties Molecule|TodoItem default 1`] = `
     </label>
     <button
       className="c5 c6"
+      onClick={[Function]}
     />
   </div>
 </li>

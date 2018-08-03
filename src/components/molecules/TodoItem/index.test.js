@@ -47,4 +47,15 @@ describe('TodoItem', () => {
     expect(completeTodo).toHaveBeenCalledTimes(1);
     expect(completeTodo).toHaveBeenCalledWith(0);
   });
+
+  it('DestroyButton の onClick で deleteTodo が呼ばれること', () => {
+    const {
+      props: { deleteTodo },
+      wrapper,
+    } = setup();
+    const DestroyButton = wrapper.dive().find('DestroyButton');
+    DestroyButton.simulate('click');
+    expect(deleteTodo).toHaveBeenCalledTimes(1);
+    expect(deleteTodo).toHaveBeenCalledWith(0);
+  });
 });
