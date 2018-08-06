@@ -31,4 +31,19 @@ storiesOf('Molecule|TodoItem', module)
         completeTodo={action('CompleteTodo')}
       />
     ))
+  )
+  .addWithJSX(
+    'completed',
+    withNotes(``)(() => (
+      <TodoItem
+        todo={{
+          id: 0,
+          text: 'foo',
+          completed: true,
+        }}
+        completeTodo={action('CompleteTodo')}
+        deleteTodo={action('DeleteTodo')}
+        editTodo={action('EditTodo')}
+      />
+    ))
   );
