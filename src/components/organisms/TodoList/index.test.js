@@ -16,6 +16,6 @@ const setup = () => {
 describe('TodoList', () => {
   it('コンポーネントがレンダリングされていること', () => {
     const { wrapper } = setup();
-    expect(wrapper.type()).toBe('ul');
+    expect(wrapper.dive().type()).toBe('ul');
   });
 });
