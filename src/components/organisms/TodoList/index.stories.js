@@ -38,4 +38,48 @@ storiesOf('Organism|TodoList', module)
         editTodo={action('Edit')}
       />
     ))
+  )
+  .addWithJSX(
+    'some completed',
+    withNotes(``)(() => (
+      <TodoList
+        todos={[
+          {
+            id: 0,
+            text: 'foo',
+            completed: true,
+          },
+          {
+            id: 1,
+            text: 'bar',
+            completed: false,
+          },
+        ]}
+        completeTodo={action('Complete')}
+        deleteTodo={action('Delete')}
+        editTodo={action('Edit')}
+      />
+    ))
+  )
+  .addWithJSX(
+    'all completed',
+    withNotes(``)(() => (
+      <TodoList
+        todos={[
+          {
+            id: 0,
+            text: 'foo',
+            completed: true,
+          },
+          {
+            id: 1,
+            text: 'bar',
+            completed: true,
+          },
+        ]}
+        completeTodo={action('Complete')}
+        deleteTodo={action('Delete')}
+        editTodo={action('Edit')}
+      />
+    ))
   );
