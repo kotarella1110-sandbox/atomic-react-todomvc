@@ -34,4 +34,19 @@ describe('TodoList', () => {
     const { wrapper } = setup();
     expect(wrapper.dive().type()).toBe('ul');
   });
+
+  it('TodoItem がレンダリングされていること', () => {
+    const {
+      props: { todos },
+      wrapper,
+    } = setup();
+    expect(wrapper.dive().children().length).toBe(2);
+    wrapper
+      .dive()
+      .children()
+      .forEach((TodoItem, index) => {
+        expect(Number(TodoItem.key())).toBe(todos[index].id);
+        expect(TodoItem.prop('todo')).toBe(todos[index]);
+      });
+  });
 });
