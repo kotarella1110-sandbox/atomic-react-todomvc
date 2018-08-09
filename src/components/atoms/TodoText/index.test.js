@@ -25,20 +25,13 @@ const setup = propOverrides => {
 describe('TodoText', () => {
   it('コンポーネントがレンダリングされていること', () => {
     const { wrapper } = setup();
-    expect(wrapper.exists()).toBe(true);
+    expect(wrapper.dive().type()).toBe('input');
+    expect(wrapper.dive().prop('type')).toBe('text');
+    expect(wrapper.dive().prop('placeholder')).toBe('foo');
+    expect(wrapper.dive().prop('value')).toBe('foo');
   });
 
-  it('InputText コンポーネントがレンダリングされていること', () => {
-    const { wrapper } = setup();
-    expect(wrapper.find('InputText').exists()).toBe(true);
-  });
-
-  it('Props で渡したテキストが State に保持されていること', () => {
-    const { wrapper } = setup();
-    expect(wrapper.state('text')).toBe('foo');
-  });
-
-  it('入力したテキストが State に保持されていること', () => {
+  it('onChange で state.text が更新されること', () => {
     const { wrapper } = setup();
     wrapper.simulate('change', { target: { value: 'bar' } });
     expect(wrapper.state('text')).toBe('bar');
