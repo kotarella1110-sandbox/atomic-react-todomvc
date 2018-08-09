@@ -46,4 +46,10 @@ describe('TodoText', () => {
     expect(onSave).toHaveBeenCalledTimes(1);
     expect(onSave).toHaveBeenCalledWith('foo');
   });
+
+  it('props.editing=false の時 onKeyDown enter で state.text が空文字になること', () => {
+    const { wrapper } = setup();
+    wrapper.dive().simulate('keyDown', { keyCode: 13 });
+    expect(wrapper.state('text')).toBe('');
+  });
 });

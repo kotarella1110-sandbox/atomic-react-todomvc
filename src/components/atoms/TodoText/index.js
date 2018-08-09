@@ -39,10 +39,13 @@ class TodoText extends React.Component {
 
   handleSubmit = e => {
     const { text } = this.state;
-    const { onSave } = this.props;
+    const { editing, onSave } = this.props;
 
     if (e.keyCode === 13) {
       onSave(text);
+      if (!editing) {
+        this.setState({ text: '' });
+      }
     }
   };
 
