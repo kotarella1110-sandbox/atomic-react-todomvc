@@ -49,12 +49,22 @@ class TodoText extends React.Component {
     }
   };
 
+  handleBlur = () => {
+    const { text } = this.state;
+    const { editing, onSave } = this.props;
+
+    if (editing) {
+      onSave(text);
+    }
+  };
+
   render() {
     return (
       <InputText
         value={this.state.text}
         onChange={this.handleChange}
         onKeyDown={this.handleSubmit}
+        onBlur={this.handleBlur}
         {...this.props}
       />
     );

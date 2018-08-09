@@ -10,6 +10,7 @@ exports[`FileProperties Atom|TodoText default 1`] = `
 
 <input
   className="c0"
+  onBlur={[Function]}
   onChange={[Function]}
   onKeyDown={[Function]}
   placeholder=""
@@ -28,6 +29,7 @@ exports[`FileProperties Atom|TodoText props text 1`] = `
 
 <input
   className="c0"
+  onBlur={[Function]}
   onChange={[Function]}
   onKeyDown={[Function]}
   placeholder=""
@@ -46,6 +48,7 @@ exports[`FileProperties Atom|TodoText props text and handleEnter 1`] = `
 
 <input
   className="c0"
+  onBlur={[Function]}
   onChange={[Function]}
   onKeyDown={[Function]}
   placeholder=""

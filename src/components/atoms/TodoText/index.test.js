@@ -52,4 +52,13 @@ describe('TodoText', () => {
     wrapper.dive().simulate('keyDown', { keyCode: 13 });
     expect(wrapper.state('text')).toBe('');
   });
+
+  it('props.editing=true の時 onBlur で onSave が呼ばれること', () => {
+    const {
+      wrapper,
+      props: { onSave },
+    } = setup({ editing: true });
+    wrapper.dive().simulate('blur');
+    expect(onSave).toHaveBeenCalledTimes(1);
+  });
 });
