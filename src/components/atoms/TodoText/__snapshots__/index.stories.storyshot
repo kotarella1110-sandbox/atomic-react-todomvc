@@ -12,6 +12,7 @@ exports[`FileProperties Atom|TodoText default 1`] = `
   className="c0"
   onChange={[Function]}
   onKeyDown={[Function]}
+  placeholder=""
   type="text"
   value=""
 />
@@ -29,6 +30,7 @@ exports[`FileProperties Atom|TodoText props text 1`] = `
   className="c0"
   onChange={[Function]}
   onKeyDown={[Function]}
+  placeholder=""
   type="text"
   value="hoge"
 />
@@ -46,6 +48,7 @@ exports[`FileProperties Atom|TodoText props text and handleEnter 1`] = `
   className="c0"
   onChange={[Function]}
   onKeyDown={[Function]}
+  placeholder=""
   type="text"
   value="hoge"
 />

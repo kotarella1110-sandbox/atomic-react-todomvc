@@ -15,10 +15,20 @@ const InputText = styled.input.attrs({
 class TodoText extends React.Component {
   static propTypes = {
     text: PropTypes.string,
-    handleEnter: PropTypes.func,
+    placeholder: PropTypes.string,
+    editing: PropTypes.bool,
+    onSave: PropTypes.func,
+  };
+
+  static defaultProps = {
+    text: '',
+    placeholder: '',
+    editing: false,
+    onSave: text => text,
   };
 
   state = {
+    // eslint-disable-next-line react/destructuring-assignment
     text: this.props.text,
   };
 
@@ -27,9 +37,12 @@ class TodoText extends React.Component {
     this.setState({ text });
   };
 
-  handleKeyDown = e => {
+  handleSubmit = e => {
+    const { text } = this.state;
+    const { onSave } = this.props;
+
     if (e.keyCode === 13) {
-      this.props.handleEnter(this.state.text);
+      onSave(text);
     }
   };
 
@@ -38,16 +51,11 @@ class TodoText extends React.Component {
       <InputText
         value={this.state.text}
         onChange={this.handleChange}
-        onKeyDown={this.handleKeyDown}
+        onKeyDown={this.handleSubmit}
         {...this.props}
       />
     );
   }
 }
-
-TodoText.defaultProps = {
-  text: '',
-  handleEnter: text => text,
-};
 
 export default TodoText;

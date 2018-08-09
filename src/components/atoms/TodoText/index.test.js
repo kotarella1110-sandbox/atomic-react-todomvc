@@ -5,7 +5,7 @@ import { TodoText } from 'components';
 const setup = propOverrides => {
   const props = Object.assign(
     {
-      handleEnter: jest.fn(),
+      onSave: jest.fn(),
       text: 'foo',
       placeholder: 'foo',
       editing: false,
@@ -37,13 +37,13 @@ describe('TodoText', () => {
     expect(wrapper.state('text')).toBe('bar');
   });
 
-  it('Enter を押すと入力されたテキストを引数として Props で渡されたコールバックを実行すること', () => {
+  it('onKeyDown enter で onSave が呼ばれること', () => {
     const {
       wrapper,
-      props: { handleEnter },
+      props: { onSave },
     } = setup();
     wrapper.find('InputText').simulate('keyDown', { keyCode: 13 });
-    expect(handleEnter).toHaveBeenCalledTimes(1);
-    expect(handleEnter).toHaveBeenCalledWith('foo');
+    expect(onSave).toHaveBeenCalledTimes(1);
+    expect(onSave).toHaveBeenCalledWith('foo');
   });
 });
