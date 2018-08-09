@@ -5,7 +5,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withSmartKnobs } from 'storybook-addon-smart-knobs';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
-import TodoItem from '.';
+import { TodoItem } from 'components';
 
 storiesOf('Molecule|TodoItem', module)
   .addDecorator((story, context) =>
