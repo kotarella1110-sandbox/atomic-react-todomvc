@@ -61,4 +61,13 @@ describe('TodoText', () => {
     wrapper.dive().simulate('blur');
     expect(onSave).toHaveBeenCalledTimes(1);
   });
+
+  it('props.editing=false の時 onBlur で onSave が呼ばれないこと', () => {
+    const {
+      wrapper,
+      props: { onSave },
+    } = setup();
+    wrapper.dive().simulate('blur');
+    expect(onSave).toHaveBeenCalledTimes(0);
+  });
 });
