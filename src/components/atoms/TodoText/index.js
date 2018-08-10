@@ -82,6 +82,7 @@ class TodoText extends React.Component {
     return (
       <InputText
         value={this.state.text}
+        autoFocus
         onChange={this.handleChange}
         onKeyDown={this.handleSubmit}
         onBlur={this.handleBlur}
