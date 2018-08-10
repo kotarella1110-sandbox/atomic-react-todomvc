@@ -1,12 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileProperties Organism|Main default 1`] = `
+.c8 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c6 {
+  word-break: break-all;
+  padding: 15px 15px 15px 60px;
+  display: block;
+  line-height: 1.2;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.c3 {
+  list-style: none;
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.c3:last-child {
+  border-bottom: 0;
+}
+
+.dVXewN .c5 {
+  color: #d9d9d9;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.c4 {
+  text-align: center;
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+}
+
+.c4 + .c5 {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.c4:checked + .c5 {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+}
+
+.c7 {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.c7:hover {
+  color: #af5b5e;
+}
+
+.c7:after {
+  content: '×';
+}
+
+.c2:hover .c7 {
+  display: block;
+}
+
+.c7:focus {
+  outline: 0;
+}
+
 .c0 {
   position: relative;
   border-top: 1px solid #e6e6e6;
 }
 
+.c1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .c4 {
+    background: none;
+    height: 40px;
+  }
+}
+
 <div
   className="c0"
-/>
+>
+  <ul
+    className="c1"
+  >
+    <li
+      className="c2 c3"
+    >
+      <div
+        className=""
+      >
+        <input
+          checked={false}
+          className="c4"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="c5 c6"
+          onDoubleClick={[Function]}
+        >
+          foo
+        </label>
+        <button
+          className="c7 c8"
+          onClick={[Function]}
+        />
+      </div>
+    </li>
+    <li
+      className="c2 c3"
+    >
+      <div
+        className=""
+      >
+        <input
+          checked={false}
+          className="c4"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="c5 c6"
+          onDoubleClick={[Function]}
+        >
+          bar
+        </label>
+        <button
+          className="c7 c8"
+          onClick={[Function]}
+        />
+      </div>
+    </li>
+  </ul>
+</div>
 `;
