@@ -1,3 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FileProperties Organism|Main default 1`] = `<div />`;
+exports[`FileProperties Organism|Main default 1`] = `
+.c0 {
+  position: relative;
+  border-top: 1px solid #e6e6e6;
+}
+
+<div
+  className="c0"
+/>
+`;
