@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileProperties Organism|Header default 1`] = `
+.c0 {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  border: 0;
+  color: inherit;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 16px 16px 16px 60px;
+  border: 0;
+  background: rgba(0,0,0,0.003);
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+<div
+  className=""
+>
+  <input
+    className=""
+    id="toggle-all"
+    type="checkbox"
+  />
+  <label
+    className=""
+    htmlFor="toggle-all"
+  />
+  <input
+    autoFocus={true}
+    className="c0"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="What needs to be done?"
+    type="text"
+    value=""
+  />
+</div>
+`;
