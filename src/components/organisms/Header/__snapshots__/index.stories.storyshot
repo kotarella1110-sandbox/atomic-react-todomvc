@@ -84,6 +84,7 @@ exports[`FileProperties Organism|Header default 1`] = `
   <input
     className="c1"
     id="toggle-all"
+    onChange={[Function]}
     type="checkbox"
   />
   <label

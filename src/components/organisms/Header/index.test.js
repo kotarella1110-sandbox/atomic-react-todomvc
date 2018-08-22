@@ -3,9 +3,15 @@ import { shallow } from 'enzyme';
 import { Header, TodoText } from 'components';
 
 const setup = () => {
-  const wrapper = shallow(<Header />);
+  const props = {
+    addTodo: jest.fn(),
+    completeAll: jest.fn(),
+  };
+
+  const wrapper = shallow(<Header {...props} />);
 
   return {
+    props,
     wrapper,
   };
 };
@@ -30,5 +36,15 @@ describe('Header', () => {
     expect(StyledTodoText.dive().prop('placeholder')).toBe(
       'What needs to be done?'
     );
+  });
+
+  it('ToggleAll の onChange で completeAll が呼ばれること', () => {
+    const {
+      props: { completeAll },
+      wrapper,
+    } = setup();
+    const ToggleAll = wrapper.dive().find('ToggleAll');
+    ToggleAll.simulate('change');
+    expect(completeAll).toHaveBeenCalledTimes(1);
   });
 });

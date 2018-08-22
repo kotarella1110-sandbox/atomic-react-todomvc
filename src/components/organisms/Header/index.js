@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { TodoText } from 'components';
 
 const StyledTodoText = styled(TodoText)``;
@@ -68,12 +69,16 @@ const ToggleAll = styled.input.attrs({
   }
 `;
 
-const Header = () => (
+const Header = ({ completeAll }) => (
   <Wrapper>
-    <ToggleAll />
+    <ToggleAll onChange={completeAll} />
     <ToggleAllLabel />
     <StyledTodoText placeholder="What needs to be done?" />
   </Wrapper>
 );
+
+Header.propTypes = {
+  completeAll: PropTypes.func.isRequired,
+};
 
 export default Header;
