@@ -47,4 +47,16 @@ describe('Header', () => {
     ToggleAll.simulate('change');
     expect(completeAll).toHaveBeenCalledTimes(1);
   });
+
+  it('text が空でない時 StyledTodoText の onSave で addTodo が呼ばれること', () => {
+    const {
+      props: { addTodo },
+      wrapper,
+    } = setup();
+    const StyledTodoText = wrapper.dive().find('StyledTodoText');
+    StyledTodoText.props().onSave('');
+    expect(addTodo).toHaveBeenCalledTimes(0);
+    StyledTodoText.props().onSave('foo');
+    expect(addTodo).toHaveBeenCalledTimes(1);
+  });
 });

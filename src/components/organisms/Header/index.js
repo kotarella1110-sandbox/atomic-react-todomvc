@@ -69,15 +69,23 @@ const ToggleAll = styled.input.attrs({
   }
 `;
 
-const Header = ({ completeAll }) => (
+const Header = ({ completeAll, addTodo }) => (
   <Wrapper>
     <ToggleAll onChange={completeAll} />
     <ToggleAllLabel />
-    <StyledTodoText placeholder="What needs to be done?" />
+    <StyledTodoText
+      onSave={text => {
+        if (text.length !== 0) {
+          addTodo(text);
+        }
+      }}
+      placeholder="What needs to be done?"
+    />
   </Wrapper>
 );
 
 Header.propTypes = {
+  addTodo: PropTypes.func.isRequired,
   completeAll: PropTypes.func.isRequired,
 };
 
