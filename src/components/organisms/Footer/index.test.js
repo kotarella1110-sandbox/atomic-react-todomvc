@@ -24,7 +24,10 @@ const setup = propOverrides => {
 
 describe('Footer', () => {
   it('コンポーネントがレンダリングされていること', () => {
-    const { wrapper } = setup();
+    const {
+      props: { visibilityFilter },
+      wrapper,
+    } = setup();
     expect(wrapper.dive().type()).toBe('div');
 
     const TodoCount = wrapper.dive().find('TodoCount');
@@ -45,6 +48,9 @@ describe('Footer', () => {
         expect(FilterItem.key()).toBe(todoFilters[index]);
         expect(FilterItem.dive().type()).toBe('li');
         expect(FilterItemLink.dive().type()).toBe('a');
+        expect(FilterItemLink.dive().prop('selected')).toBe(
+          visibilityFilter === todoFilters[index]
+        );
         expect(FilterItemLink.dive().prop('children')).toBe(
           filterTitles[index]
         );

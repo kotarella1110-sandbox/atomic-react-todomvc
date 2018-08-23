@@ -20,7 +20,7 @@ const FILTER_TITLES = {
   SHOW_COMPLETED: 'Completed',
 };
 
-const Footer = ({ activeCount, setVisibilityFilter }) => {
+const Footer = ({ visibilityFilter, activeCount, setVisibilityFilter }) => {
   const itemWord = activeCount === 1 ? 'item' : 'items';
   return (
     <Wrapper>
@@ -30,7 +30,9 @@ const Footer = ({ activeCount, setVisibilityFilter }) => {
       <Filters>
         {Object.keys(FILTER_TITLES).map(filter => (
           <FilterItem key={filter}>
-            <FilterItemLink onClick={() => setVisibilityFilter(filter)}>
+            <FilterItemLink
+              selected={visibilityFilter === filter}
+              onClick={() => setVisibilityFilter(filter)}>
               {FILTER_TITLES[filter]}
             </FilterItemLink>
           </FilterItem>
@@ -41,6 +43,7 @@ const Footer = ({ activeCount, setVisibilityFilter }) => {
 };
 
 Footer.propTypes = {
+  visibilityFilter: PropTypes.string.isRequired,
   activeCount: PropTypes.number.isRequired,
   setVisibilityFilter: PropTypes.func.isRequired,
 };
