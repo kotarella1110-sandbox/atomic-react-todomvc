@@ -149,4 +149,14 @@ describe('Footer', () => {
       'Clear completed'
     );
   });
+
+  it('ClearCompletedButton の onClick で onClearCompleted が呼ばれること', () => {
+    const {
+      props: { onClearCompleted },
+      wrapper,
+    } = setup({ completedCount: 1 });
+    const ClearCompletedButton = wrapper.dive().find('ClearCompletedButton');
+    ClearCompletedButton.simulate('click');
+    expect(onClearCompleted).toHaveBeenCalledTimes(1);
+  });
 });
