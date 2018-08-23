@@ -31,5 +31,9 @@ describe('TodoTemplate', () => {
     const Main = wrapper.dive().find('Main');
     expect(Main.dive().type()).toBe('main');
     expect(Main.dive().prop('children')).toBe('Main');
+
+    const Footer = wrapper.dive().find('Footer');
+    expect(Footer.dive().type()).toBe('footer');
+    expect(Footer.dive().prop('children')).toBe('Footer');
   });
 });

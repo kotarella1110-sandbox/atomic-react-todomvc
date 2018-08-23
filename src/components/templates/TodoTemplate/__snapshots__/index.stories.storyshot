@@ -19,5 +19,10 @@ exports[`FileProperties Template|TodoTemplate default 1`] = `
   >
     Main
   </main>
+  <footer
+    className=""
+  >
+    Footer
+  </footer>
 </div>
 `;
