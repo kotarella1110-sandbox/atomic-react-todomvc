@@ -23,5 +23,9 @@ describe('TodoTemplate', () => {
     const Title = wrapper.dive().find('Title');
     expect(Title.dive().type()).toBe('h1');
     expect(Title.dive().prop('children')).toBe('Title');
+
+    const Header = wrapper.dive().find('Header');
+    expect(Header.dive().type()).toBe('header');
+    expect(Header.dive().prop('children')).toBe('Header');
   });
 });
