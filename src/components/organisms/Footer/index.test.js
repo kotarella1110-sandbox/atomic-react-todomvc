@@ -13,6 +13,6 @@ const setup = () => {
 describe('Footer', () => {
   it('コンポーネントがレンダリングされていること', () => {
     const { wrapper } = setup();
-    expect(wrapper.type()).toBe('div');
+    expect(wrapper.dive().type()).toBe('div');
   });
 });
