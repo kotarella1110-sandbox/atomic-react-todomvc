@@ -3,5 +3,13 @@
 exports[`FileProperties Organism|Footer default 1`] = `
 <div
   className=""
-/>
+>
+  <span
+    className=""
+  >
+    <strong
+      className=""
+    />
+  </span>
+</div>
 `;
