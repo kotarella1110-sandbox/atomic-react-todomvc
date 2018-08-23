@@ -11,5 +11,39 @@ exports[`FileProperties Organism|Footer default 1`] = `
       className=""
     />
   </span>
+  <ul
+    className=""
+  >
+    <li
+      className=""
+    >
+      <a
+        className=""
+      >
+        All
+      </a>
+      .
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+      >
+        Active
+      </a>
+      .
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+      >
+        Completed
+      </a>
+      .
+    </li>
+  </ul>
 </div>
 `;
