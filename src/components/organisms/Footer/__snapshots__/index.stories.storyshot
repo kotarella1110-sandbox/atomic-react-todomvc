@@ -55,3 +55,217 @@ exports[`FileProperties Organism|Footer default 1`] = `
   </ul>
 </div>
 `;
+
+exports[`FileProperties Organism|Footer show active and completed count 0 and active count 2 1`] = `
+<div
+  className=""
+>
+  <span
+    className=""
+  >
+    <strong
+      className=""
+    >
+      2
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className=""
+  >
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={false}
+      >
+        All
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={true}
+      >
+        Active
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={false}
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`FileProperties Organism|Footer show all and completed count 1 and active count 1 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+<div
+  className=""
+>
+  <span
+    className=""
+  >
+    <strong
+      className=""
+    >
+      1
+    </strong>
+     
+    item
+     left
+  </span>
+  <ul
+    className=""
+  >
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={true}
+      >
+        All
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={false}
+      >
+        Active
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={false}
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="c0"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</div>
+`;
+
+exports[`FileProperties Organism|Footer show completed and completed count 2 and active count 0 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+<div
+  className=""
+>
+  <span
+    className=""
+  >
+    <strong
+      className=""
+    >
+      No
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className=""
+  >
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={false}
+      >
+        All
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={false}
+      >
+        Active
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        selected={true}
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="c0"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</div>
+`;
