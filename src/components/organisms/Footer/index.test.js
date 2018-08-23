@@ -110,4 +110,22 @@ describe('Footer', () => {
         .text();
     expect(textContent).toBe('2 items left');
   });
+
+  it('FilterItemLink の onClick で setVisibilityFilter が呼ばれること', () => {
+    const {
+      props: { setVisibilityFilter },
+      wrapper,
+    } = setup({ completedCount: 1 });
+    const todoFilters = ['SHOW_ALL', 'SHOW_ACTIVE', 'SHOW_COMPLETED'];
+    const Filters = wrapper.dive().find('Filters');
+    Filters.dive()
+      .children()
+      .forEach((FilterItem, index) => {
+        const FilterItemLink = FilterItem.dive().find('FilterItemLink');
+        FilterItemLink.simulate('click');
+        expect(setVisibilityFilter).toHaveBeenCalledTimes(1);
+        expect(setVisibilityFilter).toHaveBeenCalledWith(todoFilters[index]);
+        setVisibilityFilter.mockClear();
+      });
+  });
 });

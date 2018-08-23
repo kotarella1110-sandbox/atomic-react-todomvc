@@ -24,6 +24,7 @@ exports[`FileProperties Organism|Footer default 1`] = `
     >
       <a
         className=""
+        onClick={[Function]}
       >
         All
       </a>
@@ -33,6 +34,7 @@ exports[`FileProperties Organism|Footer default 1`] = `
     >
       <a
         className=""
+        onClick={[Function]}
       >
         Active
       </a>
@@ -42,6 +44,7 @@ exports[`FileProperties Organism|Footer default 1`] = `
     >
       <a
         className=""
+        onClick={[Function]}
       >
         Completed
       </a>
