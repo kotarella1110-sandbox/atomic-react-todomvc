@@ -2,10 +2,22 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Footer } from 'components';
 
-const setup = () => {
-  const wrapper = shallow(<Footer />);
+const setup = propOverrides => {
+  const props = Object.assign(
+    {
+      visibilityFilter: 'SHOW_ALL',
+      completedCount: 0,
+      activeCount: 0,
+      setVisibilityFilter: jest.fn(),
+      onClearCompleted: jest.fn(),
+    },
+    propOverrides
+  );
+
+  const wrapper = shallow(<Footer {...props} />);
 
   return {
+    props,
     wrapper,
   };
 };
@@ -37,5 +49,65 @@ describe('Footer', () => {
           filterTitles[index]
         );
       });
+  });
+
+  it('TodoCount のコンテンツが props.activeCount=0 の時正しく表示されること', () => {
+    const { wrapper } = setup({ activeCount: 0 });
+    const TodoCount = wrapper.dive().find('TodoCount');
+    const textContent =
+      TodoCount.dive()
+        .childAt(0)
+        .dive()
+        .text() +
+      TodoCount.dive()
+        .childAt(1)
+        .text() +
+      TodoCount.dive()
+        .childAt(2)
+        .text() +
+      TodoCount.dive()
+        .childAt(3)
+        .text();
+    expect(textContent).toBe('No items left');
+  });
+
+  it('TodoCount のコンテンツが props.activeCount=1 の時正しく表示されること', () => {
+    const { wrapper } = setup({ activeCount: 1 });
+    const TodoCount = wrapper.dive().find('TodoCount');
+    const textContent =
+      TodoCount.dive()
+        .childAt(0)
+        .dive()
+        .text() +
+      TodoCount.dive()
+        .childAt(1)
+        .text() +
+      TodoCount.dive()
+        .childAt(2)
+        .text() +
+      TodoCount.dive()
+        .childAt(3)
+        .text();
+    expect(textContent).toBe('1 item left');
+  });
+
+  it('TodoCount のコンテンツが props.activeCount>1 の時正しく表示されること', () => {
+    const { wrapper } = setup({ activeCount: 2 });
+    const TodoCount = wrapper.dive().find('TodoCount');
+    const textContent =
+      TodoCount.dive()
+        .childAt(0)
+        .dive()
+        .text() +
+      TodoCount.dive()
+        .childAt(1)
+        .text() +
+      TodoCount.dive()
+        .childAt(2)
+        .text() +
+      TodoCount.dive()
+        .childAt(3)
+        .text();
+    expect(textContent).toBe('2 items left');
   });
 });

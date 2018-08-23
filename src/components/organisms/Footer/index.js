@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Wrapper = styled.div``;
 
@@ -19,19 +20,26 @@ const FILTER_TITLES = {
   SHOW_COMPLETED: 'Completed',
 };
 
-const Footer = () => (
-  <Wrapper>
-    <TodoCount>
-      <TodoCountNumber />
-    </TodoCount>
-    <Filters>
-      {Object.keys(FILTER_TITLES).map(filter => (
-        <FilterItem key={filter}>
-          <FilterItemLink>{FILTER_TITLES[filter]}</FilterItemLink>.
-        </FilterItem>
-      ))}
-    </Filters>
-  </Wrapper>
-);
+const Footer = ({ activeCount }) => {
+  const itemWord = activeCount === 1 ? 'item' : 'items';
+  return (
+    <Wrapper>
+      <TodoCount>
+        <TodoCountNumber>{activeCount || 'No'}</TodoCountNumber> {itemWord} left
+      </TodoCount>
+      <Filters>
+        {Object.keys(FILTER_TITLES).map(filter => (
+          <FilterItem key={filter}>
+            <FilterItemLink>{FILTER_TITLES[filter]}</FilterItemLink>
+          </FilterItem>
+        ))}
+      </Filters>
+    </Wrapper>
+  );
+};
+
+Footer.propTypes = {
+  activeCount: PropTypes.number.isRequired,
+};
 
 export default Footer;
