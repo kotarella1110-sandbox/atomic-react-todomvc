@@ -1,6 +1,20 @@
 # [Button](../../src/components/atoms/Button)
 
-## ファイルを作成
+## コンポーネントの階層構造
+
+* Button （button）
+
+## Props
+
+None.
+
+## State
+
+None.
+
+## 準備
+
+### ファイル
 
 ```shell
 $ mkdir src/components/atoms/Button
@@ -9,9 +23,7 @@ $ touch src/components/atoms/Button/index.stories.js
 $ touch src/components/atoms/Button/index.test.js
 ```
 
-## 準備
-
-### Button コンポーネント
+### コンポーネント
 
 _src/components/atoms/Button/index.js_
 
@@ -23,7 +35,7 @@ const Button = () => <button />;
 export default Button;
 ```
 
-### Button コンポーネントのストーリー
+### コンポーネントのストーリー
 
 保存するとスナップショットテストが実行され、 _src/components/atoms/Button/__snapshots__/index.stories.storyshot_ が作成されます。
 
@@ -41,6 +53,7 @@ import { Button } from 'components';
 storiesOf('Atom|Button', module)
   .addDecorator((story, context) =>
     withInfo(`
+      API ドキュメントを記述
       ~~~jsx
       <Button />
       ~~~
@@ -48,10 +61,14 @@ storiesOf('Atom|Button', module)
   )
   .addDecorator(withSmartKnobs)
   .addDecorator(withKnobs)
-  .addWithJSX('default', withNotes(``)(() => <Button>foo</Button>));
+  .addWithJSX(
+    'default',
+    withNotes(`
+      ノートを記述
+    `)(() => <Button>foo</Button>);
 ```
 
-### Button コンポーネントのテスト
+### コンポーネントのテスト
 
 コンポーネントがレンダリングされていることを確認するテストをします。
 
@@ -78,13 +95,17 @@ describe('Button', () => {
 
 > **PASS**  src/components/atoms/Button/index.test.js
 
-## Styled Components でスタイリング
+## TDD のプロセス
+
+None.
+
+## スタイリング
+
+Storybook で表示確認をしながらコンポーネントのスタイリングをしていきましょう。
 
 [tastejs/todomvc-app-css: CSS for TodoMVC apps](https://github.com/tastejs/todomvc-app-css) をベースにスタイリングを行います。
 
 https://github.com/tastejs/todomvc-app-css/blob/master/index.css#L7-L21
-
-Storybook で表示確認をしながら実装していきましょう。
 
 _src/components/atoms/Button/index.js_
 
@@ -117,14 +138,15 @@ export default Button;
 >
 > Received value does not match stored snapshot "FileProperties Atom|Button default 1".
 
-スナップショットテストは、コンポーネントの DOM 構造をスナップショットとして保存しておき、次回のテスト時に比較して、 DOM 構造に変化があった場合に知らせてくれます。
+スナップショットテストは、コンポーネントの DOM 構造をスナップショットとして保存しておきます。
+次回のテスト時に比較して、 DOM 構造に変化があった場合に知らせてくれます。
 これにより、以前と比較して意図せず変化していないかをテストする（リグレッション・テスト）ことができます。
 
 ここではコンポーネント構造の変化は意図したものですので、これを新しいスナップショットとして更新します。
 `u` を押すことでスナップショットの更新が可能です。
 
 ここで、ストーリショットによって作成されたスナップショットファイルを確認して見ましょう。
-CSS もスナップショットとして保持されていることが確認できると思います。
+CSS もスナップショットとして保持されていることが確認できます。
 
 _src/components/atoms/Button/\_\_snapshots\_\_/index.stories.storyshots_
 
@@ -162,9 +184,9 @@ exports[`FileProperties Atom|Button default 1`] = `
 
 ## Storybook によるテスト
 
-Storybook Addon Actions を利用して、インタラクションが正しく動くかどうか視覚的にテストします。
+Storybook Addon Actions を利用して、インタラクションが正しく動くか視覚的にテストします。
 インタラクションのコールバック関数として、 `action()` 関数で生成した関数を渡します。
-Button コンポーネントをクリックするたびに、Storybook の右下ペインにある ACTION LOGGER に "Click" というログが表示されます。
+Button コンポーネントをクリックすると、Storybook の右下ペインの ACTION LOGGER に "Click" というログが表示されます。
 
 _src/components/atoms/Button/index.stories.js_
 
