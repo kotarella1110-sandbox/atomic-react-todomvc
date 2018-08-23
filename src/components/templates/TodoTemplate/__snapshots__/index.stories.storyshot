@@ -14,5 +14,10 @@ exports[`FileProperties Template|TodoTemplate default 1`] = `
   >
     Header
   </header>
+  <main
+    className=""
+  >
+    Main
+  </main>
 </div>
 `;
