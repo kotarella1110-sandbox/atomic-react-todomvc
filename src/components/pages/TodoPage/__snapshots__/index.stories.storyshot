@@ -1,23 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileProperties Page|TodoPage default 1`] = `
-.c16 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: none;
-  font-size: 100%;
-  vertical-align: baseline;
-  font-family: inherit;
-  font-weight: inherit;
-  color: inherit;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .c7 {
   position: relative;
   margin: 0;
@@ -40,101 +23,7 @@ exports[`FileProperties Page|TodoPage default 1`] = `
   box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
 }
 
-.c14 {
-  word-break: break-all;
-  padding: 15px 15px 15px 60px;
-  display: block;
-  line-height: 1.2;
-  -webkit-transition: color 0.4s;
-  transition: color 0.4s;
-}
-
-.c17 {
-  list-style: none;
-  position: relative;
-  font-size: 24px;
-  border-bottom: 1px solid #ededed;
-}
-
-.c17:last-child {
-  border-bottom: 0;
-}
-
-.c11 {
-  list-style: none;
-  position: relative;
-  font-size: 24px;
-  border-bottom: 1px solid #ededed;
-}
-
-.c11:last-child {
-  border-bottom: 0;
-}
-
-.c11 .c13 {
-  color: #d9d9d9;
-  -webkit-text-decoration: line-through;
-  text-decoration: line-through;
-}
-
-.c12 {
-  text-align: center;
-  width: 40px;
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  opacity: 0;
-}
-
-.c12 + .c13 {
-  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
-  background-repeat: no-repeat;
-  background-position: center left;
-}
-
-.c12:checked + .c13 {
-  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
-}
-
-.c15 {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  margin: auto 0;
-  font-size: 30px;
-  color: #cc9a9a;
-  margin-bottom: 11px;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-.c15:hover {
-  color: #af5b5e;
-}
-
-.c15:after {
-  content: '×';
-}
-
-.c10:hover .c15 {
-  display: block;
-}
-
-.c15:focus {
-  outline: 0;
-}
-
-.c18 {
+.c10 {
   color: #777;
   padding: 10px 15px;
   height: 20px;
@@ -142,7 +31,7 @@ exports[`FileProperties Page|TodoPage default 1`] = `
   border-top: 1px solid #e6e6e6;
 }
 
-.c18:before {
+.c10:before {
   content: '';
   position: absolute;
   right: 0;
@@ -153,16 +42,16 @@ exports[`FileProperties Page|TodoPage default 1`] = `
   box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6,0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6,0 17px 2px -6px rgba(0,0,0,0.2);
 }
 
-.c19 {
+.c11 {
   float: left;
   text-align: left;
 }
 
-.c20 {
+.c12 {
   font-weight: 300;
 }
 
-.c21 {
+.c13 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -171,11 +60,11 @@ exports[`FileProperties Page|TodoPage default 1`] = `
   left: 0;
 }
 
-.c22 {
+.c14 {
   display: inline;
 }
 
-.c23 {
+.c15 {
   color: inherit;
   margin: 3px;
   padding: 3px 7px;
@@ -186,11 +75,11 @@ exports[`FileProperties Page|TodoPage default 1`] = `
   border-color: rgba(175,47,47,0.2);
 }
 
-.c23:hover {
+.c15:hover {
   border-color: rgba(175,47,47,0.1);
 }
 
-.c24 {
+.c16 {
   color: inherit;
   margin: 3px;
   padding: 3px 7px;
@@ -200,22 +89,8 @@ exports[`FileProperties Page|TodoPage default 1`] = `
   border-radius: 3px;
 }
 
-.c24:hover {
+.c16:hover {
   border-color: rgba(175,47,47,0.1);
-}
-
-.c25 {
-  float: right;
-  position: relative;
-  line-height: 20px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c25:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 .c3 .c6::-webkit-input-placeholder {
@@ -301,21 +176,14 @@ exports[`FileProperties Page|TodoPage default 1`] = `
   text-align: center;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .c12 {
-    background: none;
-    height: 40px;
-  }
-}
-
 @media (max-width:430px) {
-  .c18 {
+  .c10 {
     height: 50px;
   }
 }
 
 @media (max-width:430px) {
-  .c21 {
+  .c13 {
     bottom: 10px;
   }
 }
@@ -370,84 +238,35 @@ exports[`FileProperties Page|TodoPage default 1`] = `
     >
       <ul
         className="c9"
-      >
-        <li
-          className="c10 c11"
-        >
-          <div
-            className=""
-          >
-            <input
-              checked={true}
-              className="c12"
-              onChange={[Function]}
-              type="checkbox"
-            />
-            <label
-              className="c13 c14"
-              onDoubleClick={[Function]}
-            >
-              foo
-            </label>
-            <button
-              className="c15 c16"
-              onClick={[Function]}
-            />
-          </div>
-        </li>
-        <li
-          className="c10 c17"
-        >
-          <div
-            className=""
-          >
-            <input
-              checked={false}
-              className="c12"
-              onChange={[Function]}
-              type="checkbox"
-            />
-            <label
-              className="c13 c14"
-              onDoubleClick={[Function]}
-            >
-              bar
-            </label>
-            <button
-              className="c15 c16"
-              onClick={[Function]}
-            />
-          </div>
-        </li>
-      </ul>
+      />
     </div>
   </main>
   <footer
     className=""
   >
     <div
-      className="c18"
+      className="c10"
     >
       <span
-        className="c19"
+        className="c11"
       >
         <strong
-          className="c20"
+          className="c12"
         >
-          1
+          No
         </strong>
          
-        item
+        items
          left
       </span>
       <ul
-        className="c21"
+        className="c13"
       >
         <li
-          className="c22"
+          className="c14"
         >
           <a
-            className="c23"
+            className="c15"
             onClick={[Function]}
             selected={true}
           >
@@ -455,10 +274,10 @@ exports[`FileProperties Page|TodoPage default 1`] = `
           </a>
         </li>
         <li
-          className="c22"
+          className="c14"
         >
           <a
-            className="c24"
+            className="c16"
             onClick={[Function]}
             selected={false}
           >
@@ -466,10 +285,10 @@ exports[`FileProperties Page|TodoPage default 1`] = `
           </a>
         </li>
         <li
-          className="c22"
+          className="c14"
         >
           <a
-            className="c24"
+            className="c16"
             onClick={[Function]}
             selected={false}
           >
@@ -477,12 +296,6 @@ exports[`FileProperties Page|TodoPage default 1`] = `
           </a>
         </li>
       </ul>
-      <button
-        className="c25 c16"
-        onClick={[Function]}
-      >
-        Clear completed
-      </button>
     </div>
   </footer>
 </div>
