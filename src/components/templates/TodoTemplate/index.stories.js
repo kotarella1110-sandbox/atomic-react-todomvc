@@ -16,4 +16,11 @@ storiesOf('Template|TodoTemplate', module)
   )
   .addDecorator(withSmartKnobs)
   .addDecorator(withKnobs)
-  .addWithJSX('default', withNotes(``)(() => <TodoTemplate />));
+  .addWithJSX(
+    'default',
+    withNotes(``)(() => (
+      <TodoTemplate title="Title" header="Header" footer="Footer">
+        Main
+      </TodoTemplate>
+    ))
+  );
