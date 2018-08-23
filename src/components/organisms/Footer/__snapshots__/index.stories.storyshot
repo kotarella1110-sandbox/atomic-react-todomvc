@@ -1,14 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileProperties Organism|Footer default 1`] = `
+.c0 {
+  color: #777;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6,0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6,0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c1 {
+  float: left;
+  text-align: left;
+}
+
+.c2 {
+  font-weight: 300;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.c4 {
+  display: inline;
+}
+
+.c5 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-color: rgba(175,47,47,0.2);
+}
+
+.c5:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c6 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.c6:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+@media (max-width:430px) {
+  .c0 {
+    height: 50px;
+  }
+}
+
+@media (max-width:430px) {
+  .c3 {
+    bottom: 10px;
+  }
+}
+
 <div
-  className=""
+  className="c0"
 >
   <span
-    className=""
+    className="c1"
   >
     <strong
-      className=""
+      className="c2"
     >
       No
     </strong>
@@ -17,13 +99,13 @@ exports[`FileProperties Organism|Footer default 1`] = `
      left
   </span>
   <ul
-    className=""
+    className="c3"
   >
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c5"
         onClick={[Function]}
         selected={true}
       >
@@ -31,10 +113,10 @@ exports[`FileProperties Organism|Footer default 1`] = `
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c6"
         onClick={[Function]}
         selected={false}
       >
@@ -42,10 +124,10 @@ exports[`FileProperties Organism|Footer default 1`] = `
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c6"
         onClick={[Function]}
         selected={false}
       >
@@ -57,14 +139,96 @@ exports[`FileProperties Organism|Footer default 1`] = `
 `;
 
 exports[`FileProperties Organism|Footer show active and completed count 0 and active count 2 1`] = `
+.c0 {
+  color: #777;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6,0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6,0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c1 {
+  float: left;
+  text-align: left;
+}
+
+.c2 {
+  font-weight: 300;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.c4 {
+  display: inline;
+}
+
+.c6 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-color: rgba(175,47,47,0.2);
+}
+
+.c6:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c5 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.c5:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+@media (max-width:430px) {
+  .c0 {
+    height: 50px;
+  }
+}
+
+@media (max-width:430px) {
+  .c3 {
+    bottom: 10px;
+  }
+}
+
 <div
-  className=""
+  className="c0"
 >
   <span
-    className=""
+    className="c1"
   >
     <strong
-      className=""
+      className="c2"
     >
       2
     </strong>
@@ -73,13 +237,13 @@ exports[`FileProperties Organism|Footer show active and completed count 0 and ac
      left
   </span>
   <ul
-    className=""
+    className="c3"
   >
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c5"
         onClick={[Function]}
         selected={false}
       >
@@ -87,10 +251,10 @@ exports[`FileProperties Organism|Footer show active and completed count 0 and ac
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c6"
         onClick={[Function]}
         selected={true}
       >
@@ -98,10 +262,10 @@ exports[`FileProperties Organism|Footer show active and completed count 0 and ac
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c5"
         onClick={[Function]}
         selected={false}
       >
@@ -113,7 +277,7 @@ exports[`FileProperties Organism|Footer show active and completed count 0 and ac
 `;
 
 exports[`FileProperties Organism|Footer show all and completed count 1 and active count 1 1`] = `
-.c0 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -130,14 +294,110 @@ exports[`FileProperties Organism|Footer show all and completed count 1 and activ
   -moz-osx-font-smoothing: grayscale;
 }
 
+.c0 {
+  color: #777;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6,0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6,0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c1 {
+  float: left;
+  text-align: left;
+}
+
+.c2 {
+  font-weight: 300;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.c4 {
+  display: inline;
+}
+
+.c5 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-color: rgba(175,47,47,0.2);
+}
+
+.c5:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c6 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.c6:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c7 {
+  float: right;
+  position: relative;
+  line-height: 20px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c7:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (max-width:430px) {
+  .c0 {
+    height: 50px;
+  }
+}
+
+@media (max-width:430px) {
+  .c3 {
+    bottom: 10px;
+  }
+}
+
 <div
-  className=""
+  className="c0"
 >
   <span
-    className=""
+    className="c1"
   >
     <strong
-      className=""
+      className="c2"
     >
       1
     </strong>
@@ -146,13 +406,13 @@ exports[`FileProperties Organism|Footer show all and completed count 1 and activ
      left
   </span>
   <ul
-    className=""
+    className="c3"
   >
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c5"
         onClick={[Function]}
         selected={true}
       >
@@ -160,10 +420,10 @@ exports[`FileProperties Organism|Footer show all and completed count 1 and activ
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c6"
         onClick={[Function]}
         selected={false}
       >
@@ -171,10 +431,10 @@ exports[`FileProperties Organism|Footer show all and completed count 1 and activ
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c6"
         onClick={[Function]}
         selected={false}
       >
@@ -183,7 +443,7 @@ exports[`FileProperties Organism|Footer show all and completed count 1 and activ
     </li>
   </ul>
   <button
-    className="c0"
+    className="c7 c8"
     onClick={[Function]}
   >
     Clear completed
@@ -192,7 +452,7 @@ exports[`FileProperties Organism|Footer show all and completed count 1 and activ
 `;
 
 exports[`FileProperties Organism|Footer show completed and completed count 2 and active count 0 1`] = `
-.c0 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -209,14 +469,110 @@ exports[`FileProperties Organism|Footer show completed and completed count 2 and
   -moz-osx-font-smoothing: grayscale;
 }
 
+.c0 {
+  color: #777;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6,0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6,0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c1 {
+  float: left;
+  text-align: left;
+}
+
+.c2 {
+  font-weight: 300;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.c4 {
+  display: inline;
+}
+
+.c6 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-color: rgba(175,47,47,0.2);
+}
+
+.c6:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c5 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.c5:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c7 {
+  float: right;
+  position: relative;
+  line-height: 20px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c7:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (max-width:430px) {
+  .c0 {
+    height: 50px;
+  }
+}
+
+@media (max-width:430px) {
+  .c3 {
+    bottom: 10px;
+  }
+}
+
 <div
-  className=""
+  className="c0"
 >
   <span
-    className=""
+    className="c1"
   >
     <strong
-      className=""
+      className="c2"
     >
       No
     </strong>
@@ -225,13 +581,13 @@ exports[`FileProperties Organism|Footer show completed and completed count 2 and
      left
   </span>
   <ul
-    className=""
+    className="c3"
   >
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c5"
         onClick={[Function]}
         selected={false}
       >
@@ -239,10 +595,10 @@ exports[`FileProperties Organism|Footer show completed and completed count 2 and
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c5"
         onClick={[Function]}
         selected={false}
       >
@@ -250,10 +606,10 @@ exports[`FileProperties Organism|Footer show completed and completed count 2 and
       </a>
     </li>
     <li
-      className=""
+      className="c4"
     >
       <a
-        className=""
+        className="c6"
         onClick={[Function]}
         selected={true}
       >
@@ -262,7 +618,7 @@ exports[`FileProperties Organism|Footer show completed and completed count 2 and
     </li>
   </ul>
   <button
-    className="c0"
+    className="c7 c8"
     onClick={[Function]}
   >
     Clear completed
