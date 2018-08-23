@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Button } from 'components';
 
 const Wrapper = styled.div``;
 
@@ -14,13 +15,20 @@ const FilterItem = styled.li``;
 
 const FilterItemLink = styled.a``;
 
+const ClearCompletedButton = styled(Button)``;
+
 const FILTER_TITLES = {
   SHOW_ALL: 'All',
   SHOW_ACTIVE: 'Active',
   SHOW_COMPLETED: 'Completed',
 };
 
-const Footer = ({ visibilityFilter, activeCount, setVisibilityFilter }) => {
+const Footer = ({
+  visibilityFilter,
+  activeCount,
+  setVisibilityFilter,
+  completedCount,
+}) => {
   const itemWord = activeCount === 1 ? 'item' : 'items';
   return (
     <Wrapper>
@@ -38,12 +46,16 @@ const Footer = ({ visibilityFilter, activeCount, setVisibilityFilter }) => {
           </FilterItem>
         ))}
       </Filters>
+      {!!completedCount && (
+        <ClearCompletedButton>Clear completed</ClearCompletedButton>
+      )}
     </Wrapper>
   );
 };
 
 Footer.propTypes = {
   visibilityFilter: PropTypes.string.isRequired,
+  completedCount: PropTypes.number.isRequired,
   activeCount: PropTypes.number.isRequired,
   setVisibilityFilter: PropTypes.func.isRequired,
 };

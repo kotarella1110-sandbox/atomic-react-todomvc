@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Footer } from 'components';
+import { Footer, Button } from 'components';
 
 const setup = propOverrides => {
   const props = Object.assign(
@@ -133,5 +133,20 @@ describe('Footer', () => {
         expect(setVisibilityFilter).toHaveBeenCalledWith(todoFilters[index]);
         setVisibilityFilter.mockClear();
       });
+  });
+
+  it('props.completedCount=0 の時 ClearCompletedButton がレンダリングされないこと', () => {
+    const { wrapper } = setup({ completedCount: 0 });
+    const ClearCompletedButton = wrapper.dive().find('ClearCompletedButton');
+    expect(ClearCompletedButton.exists()).toBe(false);
+  });
+
+  it('props.completedCount>=1 の時 ClearCompletedButton がレンダリングされること', () => {
+    const { wrapper } = setup({ completedCount: 1 });
+    const ClearCompletedButton = wrapper.dive().find('ClearCompletedButton');
+    expect(ClearCompletedButton.dive().type()).toBe(Button);
+    expect(ClearCompletedButton.dive().prop('children')).toBe(
+      'Clear completed'
+    );
   });
 });
