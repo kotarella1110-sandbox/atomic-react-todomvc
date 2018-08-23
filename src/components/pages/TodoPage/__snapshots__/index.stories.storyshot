@@ -1,5 +1,489 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FileProperties Page|TodoPage default 1`] = `<div />`;
+exports[`FileProperties Page|TodoPage default 1`] = `
+.c16 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-exports[`FileProperties Template|TodoPage default 1`] = `<div />`;
+.c7 {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  border: 0;
+  color: inherit;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 16px 16px 16px 60px;
+  border: 0;
+  background: rgba(0,0,0,0.003);
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+.c14 {
+  word-break: break-all;
+  padding: 15px 15px 15px 60px;
+  display: block;
+  line-height: 1.2;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.c17 {
+  list-style: none;
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.c17:last-child {
+  border-bottom: 0;
+}
+
+.c11 {
+  list-style: none;
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.c11:last-child {
+  border-bottom: 0;
+}
+
+.c11 .c13 {
+  color: #d9d9d9;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.c12 {
+  text-align: center;
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+}
+
+.c12 + .c13 {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.c12:checked + .c13 {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+}
+
+.c15 {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.c15:hover {
+  color: #af5b5e;
+}
+
+.c15:after {
+  content: '×';
+}
+
+.c10:hover .c15 {
+  display: block;
+}
+
+.c15:focus {
+  outline: 0;
+}
+
+.c18 {
+  color: #777;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.c18:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6,0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6,0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c19 {
+  float: left;
+  text-align: left;
+}
+
+.c20 {
+  font-weight: 300;
+}
+
+.c21 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.c22 {
+  display: inline;
+}
+
+.c23 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-color: rgba(175,47,47,0.2);
+}
+
+.c23:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c24 {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.c24:hover {
+  border-color: rgba(175,47,47,0.1);
+}
+
+.c25 {
+  float: right;
+  position: relative;
+  line-height: 20px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c25:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3 .c6::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.c3 .c6::-moz-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.c3 .c6::input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.c4 {
+  text-align: center;
+  border: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.c4 + .c5 {
+  width: 60px;
+  height: 34px;
+  font-size: 0;
+  position: absolute;
+  top: 14px;
+  left: -13px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  z-index: 3;
+}
+
+.c4 + .c5:before {
+  content: '❯';
+  font-size: 22px;
+  color: #e6e6e6;
+  padding: 10px 27px 10px 27px;
+}
+
+.c4:checked + .c5:before {
+  color: #737373;
+}
+
+.c8 {
+  position: relative;
+  border-top: 1px solid #e6e6e6;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c2 {
+  font-size: 100px;
+  font-weight: 100;
+  color: rgba(175,47,47,0.15);
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+.c0 {
+  background: #fff;
+  margin: 130px 0 40px 0;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 25px 50px 0 rgba(0,0,0,0.1);
+}
+
+.c0 .c1 {
+  position: absolute;
+  top: -155px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .c12 {
+    background: none;
+    height: 40px;
+  }
+}
+
+@media (max-width:430px) {
+  .c18 {
+    height: 50px;
+  }
+}
+
+@media (max-width:430px) {
+  .c21 {
+    bottom: 10px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .c4 {
+    background: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1 c2"
+  >
+    todos
+  </h1>
+  <header
+    className=""
+  >
+    <div
+      className="c3"
+    >
+      <input
+        className="c4"
+        id="toggle-all"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <label
+        className="c5 "
+        htmlFor="toggle-all"
+      />
+      <input
+        autoFocus={true}
+        className="c6 c7"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="What needs to be done?"
+        type="text"
+        value=""
+      />
+    </div>
+  </header>
+  <main
+    className=""
+  >
+    <div
+      className="c8"
+    >
+      <ul
+        className="c9"
+      >
+        <li
+          className="c10 c11"
+        >
+          <div
+            className=""
+          >
+            <input
+              checked={true}
+              className="c12"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="c13 c14"
+              onDoubleClick={[Function]}
+            >
+              foo
+            </label>
+            <button
+              className="c15 c16"
+              onClick={[Function]}
+            />
+          </div>
+        </li>
+        <li
+          className="c10 c17"
+        >
+          <div
+            className=""
+          >
+            <input
+              checked={false}
+              className="c12"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="c13 c14"
+              onDoubleClick={[Function]}
+            >
+              bar
+            </label>
+            <button
+              className="c15 c16"
+              onClick={[Function]}
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer
+    className=""
+  >
+    <div
+      className="c18"
+    >
+      <span
+        className="c19"
+      >
+        <strong
+          className="c20"
+        >
+          1
+        </strong>
+         
+        item
+         left
+      </span>
+      <ul
+        className="c21"
+      >
+        <li
+          className="c22"
+        >
+          <a
+            className="c23"
+            onClick={[Function]}
+            selected={true}
+          >
+            All
+          </a>
+        </li>
+        <li
+          className="c22"
+        >
+          <a
+            className="c24"
+            onClick={[Function]}
+            selected={false}
+          >
+            Active
+          </a>
+        </li>
+        <li
+          className="c22"
+        >
+          <a
+            className="c24"
+            onClick={[Function]}
+            selected={false}
+          >
+            Completed
+          </a>
+        </li>
+      </ul>
+      <button
+        className="c25 c16"
+        onClick={[Function]}
+      >
+        Clear completed
+      </button>
+    </div>
+  </footer>
+</div>
+`;

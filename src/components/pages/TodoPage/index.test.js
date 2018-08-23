@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { TodoPage } from 'components';
+import { TodoPage, TodoTemplate } from 'components';
 
 const setup = () => {
   const wrapper = shallow(<TodoPage />);
@@ -11,8 +11,8 @@ const setup = () => {
 };
 
 describe('TodoPage', () => {
-  it('コンポーネントがレンダリングされていること', () => {
+  it('コンポーネントがレンダリングされているか', () => {
     const { wrapper } = setup();
-    expect(wrapper.type()).toBe('div');
+    expect(wrapper.type()).toBe(TodoTemplate);
   });
 });
