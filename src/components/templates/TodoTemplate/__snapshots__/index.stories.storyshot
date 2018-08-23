@@ -3,5 +3,11 @@
 exports[`FileProperties Template|TodoTemplate default 1`] = `
 <div
   className=""
-/>
+>
+  <h1
+    className=""
+  >
+    Title
+  </h1>
+</div>
 `;

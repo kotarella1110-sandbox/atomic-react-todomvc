@@ -19,5 +19,9 @@ describe('TodoTemplate', () => {
   it('コンポーネントがレンダリングされていること', () => {
     const { wrapper } = setup();
     expect(wrapper.dive().type()).toBe('div');
+
+    const Title = wrapper.dive().find('Title');
+    expect(Title.dive().type()).toBe('h1');
+    expect(Title.dive().prop('children')).toBe('Title');
   });
 });
