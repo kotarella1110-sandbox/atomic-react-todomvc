@@ -2,7 +2,7 @@
 
 ## コンポーネントの階層構造
 
-* Button （button）
+* Button（button）
 
 ## Props
 
