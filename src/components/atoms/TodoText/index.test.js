@@ -9,7 +9,6 @@ const setup = propOverrides => {
       text: 'foo',
       placeholder: 'foo',
       editing: false,
-      newTodo: false,
     },
     propOverrides
   );
