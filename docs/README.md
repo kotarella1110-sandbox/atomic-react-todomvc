@@ -1,5 +1,7 @@
 # Atomic React TodoMVC TDD Tutorial
 
+![TodoMVC](./assets/TodoMVC.png)
+
 1. [Atom](./atoms/README.md)
 1. [Molecule](./molecules/README.md)
 1. [Organism](./organisms/README.md)
