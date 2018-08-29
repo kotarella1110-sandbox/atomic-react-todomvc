@@ -98,8 +98,8 @@ const setup = propOverrides => {
 describe('TodoText', () => {
   it('コンポーネントがレンダリングされていること', () => {
     const { wrapper } = setup();
-    expect(wrapper.dive().type()).toBe('input');
-    expect(wrapper.dive().prop('type')).toBe('text');
+    expect(wrapper.type()).toBe('input');
+    expect(wrapper.prop('type')).toBe('text');
   });
 });
 ```
